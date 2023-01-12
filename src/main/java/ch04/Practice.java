@@ -3,9 +3,12 @@ package ch04;
 public class Practice {
     public static void main(String[] args) {
         // 4-6 문제
+        for (int i=1; i<=6; i++)
+            for (int j=1; j<=6; j++)
+                if(i+j == 6)
+                    System.out.println(i+"+"+j+"="+(i+j));
 
-
-        // 4-4 문제
+        /* 4-4 문제
         int sum = 0; // 총합을 저장할 변수
         int s = 1; // 값의 부호를 바꿔주는데 사용할 변수
         int num = 0;
@@ -21,6 +24,7 @@ public class Practice {
         }
         System.out.println("num = "+num);
         System.out.println("sum = "+sum);
+         */
 
         /* 4-3문제
         int sum = 0;
