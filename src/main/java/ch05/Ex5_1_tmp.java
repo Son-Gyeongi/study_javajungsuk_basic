@@ -4,6 +4,17 @@ import java.util.Arrays;
 
 public class Ex5_1_tmp {
     public static void main(String[] args) {
+        // Ex5_5
+        // index: 0~3-1, 0~2
+        String[] strArr = {"가위", "바위", "보"};
+        System.out.println(Arrays.toString(strArr));
+
+        for (int i=0; i<10; i++) {
+            int tmp = (int)(Math.random()*3);
+            System.out.println(strArr[tmp]); // 범위 0~2
+        }
+
+        // Ex5_1
         /* 배열 선언과 생성
 //        int[] score; // 1. 배열 score를 선언 (참조변수 선언)
 //        score = new int[5]; // 2. 배열의 생성 (int 저장공간 x 5)
@@ -30,11 +41,13 @@ public class Ex5_1_tmp {
         }
          */
 
+        /*
         int[] iArr = {100,95,80,70,60}; // 길이가 5인 int 배열
         for (int i=0; i < iArr.length;i++) {
             System.out.println(iArr[i]);
         }
 
         System.out.println(Arrays.toString(iArr));
+         */
     }
 }
