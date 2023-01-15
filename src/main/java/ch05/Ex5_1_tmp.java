@@ -4,6 +4,15 @@ import java.util.Arrays;
 
 public class Ex5_1_tmp {
     public static void main(String[] args) {
+        // String 클래스 메서드들
+        String str = "ABCDE";
+        char ch = str.charAt(2);
+        String str2 = str.substring(1, 4); // 결과 : BCD
+        String str3 = str.substring(1); // 1~4 결과 : BCDE (1) == (1, str.length())
+        String str4 = str.substring(1, str.length());
+        System.out.println(str4);
+
+        /* 배열의 인덱스 범위
         // index: 0~3-1, 0~2
         String[] strArr = {"가위", "바위", "보"};
         System.out.println(Arrays.toString(strArr));
@@ -12,6 +21,7 @@ public class Ex5_1_tmp {
             int tmp = (int)(Math.random()*3);
             System.out.println(strArr[tmp]); // 범위 0~2
         }
+         */
 
         // Ex5_1
         /* 배열 선언과 생성
