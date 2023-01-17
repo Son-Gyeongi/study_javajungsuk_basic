@@ -9,6 +9,7 @@ public class Ex6_4 {
         double result4 = mm.divide(5L, 3L);
         long result5 = mm.max(3L, 5L); // 둘 중에 큰 값을 반환하는 메서드
         long result6 = mm.min(3L, 5L); // 둘 중에 작은 값을 반환하는 메서드
+        mm.printGugudan(12); // 구구단 3단을 출력
 
         System.out.println("add(5L, 3L) = " + result1);
         System.out.println("subtract(5L, 3L) = " + result2);
@@ -20,6 +21,17 @@ public class Ex6_4 {
 }
 
 class MyMath {
+    // 구구단 출력 메서드
+    void printGugudan(int dan) {
+        if(!(2<=dan&& dan <=9)) {
+            return; // 입력받은 단(dan)이 2~9가 아니면, 메서드 종료하고 돌아가기
+        }
+        for (int i=1;i<=9;i++) {
+            System.out.printf("%d * %d = %d%n", dan, i, dan*i);
+        }
+//        return;
+    }
+
     long add(long a, long b) {
         long result = a + b;
         return result;
