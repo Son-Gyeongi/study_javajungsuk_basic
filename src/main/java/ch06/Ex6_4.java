@@ -38,7 +38,13 @@ class MyMath {
         // result a+b; 위릐 두 줄을 이와 같이 한줄로 간단히 할 수 있다.
     }
     // 두 값을 받아서 둘중에 큰 값을 반환하는 메서드를 작성하시오
-    long max(long a, long b) {return a>b? a:b;}
+    long max(long a, long b) {
+        if (a>b) {
+            return a; // 조건식이 참일때만 실행
+        } else {
+            return b; // 조건식이 거짓일 때 실행
+        }
+    }
     // 두 값을 받아서 둘중에 작은 값을 반환하는 메서드를 작성하시오
     long min(long a, long b) {return a<b? a:b;}
     long subtract(long a, long b) { return a-b; }
