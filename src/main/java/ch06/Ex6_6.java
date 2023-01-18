@@ -15,7 +15,7 @@ public class Ex6_6 {
         System.out.println("main() : x = "+d.x);
     }
 
-    static void change(int x) {
+    static void change(int x) { // 기본형 매개변수
         x = 1000;
         System.out.println("change() : x = "+x);
     }
