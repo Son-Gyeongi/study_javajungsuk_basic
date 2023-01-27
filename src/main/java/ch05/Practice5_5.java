@@ -2,7 +2,7 @@ package ch05;
 
 import java.util.Arrays;
 
-public class Exercise5_5 {
+public class Practice5_5 {
     public static void main(String[] args) {
         int[] ballArr = {1,2,3,4,5,6,7,8,9};
         int[] ball3 = new int[3];

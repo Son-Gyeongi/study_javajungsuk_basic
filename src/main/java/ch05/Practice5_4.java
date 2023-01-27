@@ -1,6 +1,6 @@
 package ch05;
 
-public class Exercise5_4 {
+public class Practice5_4 {
     public static void main(String[] args) {
         int[][] arr = {
                 {5,5,5,5,5},
