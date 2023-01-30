@@ -27,7 +27,6 @@ class Student6_2 {
         double avg;
         sum = kor + eng + math;
         avg = sum/3.0;
-        System.out.println(avg);
 
         return name + "," + ban + "," + no + "," + kor + "," + eng + "," + math + "," + sum + "," + Math.round(avg*10)/10.0;
     }
@@ -35,7 +34,7 @@ class Student6_2 {
 
 public class Practice6_2 {
     public static void main(String[] args) {
-        Student6_2 s = new Student6_2("홍길동", 1, 1, 100, 60, 75);
+        Student6_2 s = new Student6_2("홍길동", 1, 1, 100, 60, 76);
 
         String str = s.info();
         System.out.println(str);
