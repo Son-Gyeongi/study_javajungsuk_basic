@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Practice6_17 {
     public static int[] shuffle(int[] arr) {
-        // 예외처리 - arr이 null 이거나 길이가 0이면 그대로 반환
+        // 예외처리 - 값의 유효성 체크 arr이 null 이거나 길이가 0이면 그대로 반환
         if (arr == null || arr.length == 0)
             return arr;
 
