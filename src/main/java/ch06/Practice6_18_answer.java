@@ -2,13 +2,14 @@ package ch06;
 
 public class Practice6_18_answer {
     public static boolean isNumber(String str) {
-        if (str == null || str.equals(""))
+        if (str == null || str.equals("")) // 유효성 체크
             return false;
 
         for (int i=0; i<str.length();i++) {
             char ch = str.charAt(i);
 
-            if (ch < '0' || ch > '9') {
+            // ch가 숫자가 아니면 false 반환
+            if (ch < '0' || ch > '9') { // if(!('0' <=ch && ch <= '9')) 와 같다
                 return false;
             }
         } // for end
