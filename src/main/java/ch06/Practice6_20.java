@@ -9,8 +9,8 @@ public class Practice6_20 {
 
         int max = arr[0]; // 배열의 첫 번째 값으로 최대값을 초기화 한다.
 
-        for (int i=1; i< arr.length;i++) { // 배열의 두 번째 값부터 비교한다.
-            if (arr[i] > max)
+        for (int i=1; i< arr.length;i++) { // 배열의 두 번째 값부터 비교한다. 첫번째 값으로 초기화 했으므로 첫번째값은 비교할 필요 없다.
+            if (arr[i] > max) // 배열의 i번째 요소가 max보다 크면
                 max = arr[i];
         }
         return max;
