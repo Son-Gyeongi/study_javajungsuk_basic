@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class Practice6_21 {
     public static int abs(int value) {
 //        return Math.abs(value);
+
         // 답안
         return value >= 0 ? value : -value;
     }
