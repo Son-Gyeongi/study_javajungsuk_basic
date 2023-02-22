@@ -8,14 +8,16 @@ public class Ex7_5PackageTest {
 
 /*
 cmd 창에서 클래스 파일 실행 해보기
-C:\Users\user>java ch07.Ex7_5PackageTest
+C:역슬래시Users 역슬래시user>java ch07.Ex7_5PackageTest
 오류: 기본 클래스 ch07.Ex7_5PackageTest을(를) 찾거나 로드할 수 없습니다.
 
 -> 패키지 파일이 있는 상위폴더로 이동
-C:\Users\user>cd C:\Users\user\workspaceJava\study\build\classes\java\main
+C:역슬래시Users 역슬래시user>cd C:역슬래시Users 역슬래시user 역슬래시workspaceJava 역슬래시study 역슬래시build
+역슬래시classes 역슬래시java 역슬래시main
 
-C:\Users\user\workspaceJava\study\build\classes\java\main>java ch07.Ex7_5PackageTest
+C:역슬래시Users 역슬래시user 역슬래시workspaceJava 역슬래시study 역슬래시build 역슬래시classes
+ 역슬래시java 역슬래시main>java ch07.Ex7_5PackageTest
 Hello World!
 
-C:\Users\user\workspaceJava\study\build\classes\java\main>
+C: 역슬래시Users 역슬래시user 역슬래시workspaceJava 역슬래시study 역슬래시build 역슬래시classes 역슬래시java 역슬래시main>
  */
