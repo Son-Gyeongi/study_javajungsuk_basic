@@ -34,14 +34,18 @@ class Fighter extends Unit2 implements Fightable {
     // 싸울 수 있는 상대를 불러온다.
     Fightable getFightable() {
         Fighter f = new Fighter(); // Fighter를 생성해서 반환
-        return f;
+        return f; // return (Fightable) f; Fightable 형변환이 생략되어 있다.
+
+//        Fightable f = new Fighter(); // Fightable f = (Fightable) new Fighter(); 형변환이 생략되어 있다.
+//        return f;
     }
 }
 
 public class FighterTest {
     public static void main(String[] args) {
         Fighter get = new Fighter();
-        get.getFightable();
+        // getFightable메서드의 반환타입인 Fightable과 타입을 일치시킨다.
+        Fightable fightable= get.getFightable();
 
 //        Fighter f = new Fighter();
         Unit2 u = new Fighter(); // 추상클래스와 다형성
