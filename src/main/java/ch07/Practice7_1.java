@@ -38,7 +38,7 @@ public class Practice7_1 {
         SutdaDeck deck = new SutdaDeck();
 
         for (int i = 0; i < deck.cards.length; i++) {
-            System.out.println(deck.cards[i] + ",");
+            System.out.print(deck.cards[i] + ",");
         }
     }
 }
