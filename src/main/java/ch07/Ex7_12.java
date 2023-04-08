@@ -21,10 +21,14 @@ public class Ex7_12 {
 //            지역 내부 클래스도 static멤버 가질 수 없다.
             final static int CONST = 300; // final static은 상수이므로 허용
         }
+        // 지역 내부 클래스의 static 상수는 메서드 내(myMethod)에서만 사용가능
+        int i = LocalInner.CONST; // OK
     }
 
     public static void main(String[] args) {
+        // 상수 사용 : 내부클래스 이름.상수 이름
         System.out.println(InstanceInner.CONST);
         System.out.println(StaticInner.cv);
+//        System.out.println(LocalInner.CONST); 에러, 지역 내부 클래스는 메서드 내에서만 사용가능
     }
 }
