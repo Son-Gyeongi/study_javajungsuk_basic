@@ -1,0 +1,10 @@
+package ch08;
+
+public class Ex8_7 {
+    public static void main(String[] args) {
+//        throw new Exception(); // Exception을 고의로 발생시킨다.
+        // 에러 error: unreported exception java.lang.Exception; must be caught or declared to be thrown
+        // 컴파일 에러, 컴파일조차 안된다.
+        // Exception과 자손은 예외처리 필수 -> try-catch문 필수
+    }
+}
