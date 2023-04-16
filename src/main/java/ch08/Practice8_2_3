@@ -1,0 +1,32 @@
+Practice8_2
+실행도중 예외가 발생하여 화면에 출력된 내용
+java.lang.ArithmeticException : / by zero
+    at.ExceptionEx18.method2(ExceptionEx18.java:12)
+    at.ExceptionEx18.method1(ExceptionEx18.java:8)
+    at.ExceptionEx18.main(ExceptionEx18.java:4)
+
+=> 위의 내용으로 예외가 발생했을 당시 호출스택에 존재했던 메서드를 알 수 있다. (main, method1, method2)
+=> 예외가 발생한 위치는 method2 메서드이며, ExceptionEx18.java파일의 12번째 줄이다.
+=> 발생한 예외는 ArithmeticException이며, 0으로 나누어서 예외가 발생했다.
+=> method1메서드가 method2메서드를 호출하였다.
+
+
+Practice8_3
+오버라이딩
+
+void add(int a, int b) throws InvalidNumberException, NotANumberException {}
+
+class NumberException extends Exception {}
+class InvalidNumberException extends NumberException {}
+class NotANumberException extends NumberException {}
+
+오버라이딩 맞는 거
+=> void add(int a, int b) throws InvalidNumberException, NotANumberException {}
+=> void add(int a, int b) throws InvalidNumberException {}
+=> void add(int a, int b) throws NotANumberException {}
+
+오버라이딩 틀린거
+오버라이딩 할 때, 조상 클래스의 메서드보다 많은 수의 예외를 선언할 수 없다.
+예외의 개수는 적거나 같아야 한다는 조건을 만족시키지 못하는 잘못된 오버라이딩이다.
+=> void add(int a, int b) throws Exception {}
+=> void add(int a, int b) throws NumberException {}
