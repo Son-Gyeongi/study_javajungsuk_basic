@@ -28,6 +28,12 @@ public class Practice8_3Test {
             super(a,b);
         }
 
-        void add(int a, int b) throws InvalidNumberException, NotANumberException {}
+        // 메서드 오버라이딩 테스트
+        void add(int a, int b) throws InvalidNumberException, NotANumberException {} // 오버라이딩 가능
+//        void add(int a, int b) throws InvalidNumberException {} // 오버라이딩 가능
+//        void add(int a, int b) throws NotANumberException {} // 오버라이딩 가능
+        // 조상 클래스의 메서드보다 많은 수의 예외를 선언할 수 없다.
+//        void add(int a, int b) throws Exception {} // 오버라이딩 불가능
+//        void add(int a, int b) throws NumberException {} // 오버라이딩 불가능
     }
 }
