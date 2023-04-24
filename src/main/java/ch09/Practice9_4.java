@@ -8,11 +8,16 @@ public class Practice9_4 {
      * 반환타입 : boolean
      * 매개변수 : String src, String target
      */
-    public static boolean contains(String src, String target) {
-        int i = src.indexOf(target);
+//    public static boolean contains(String src, String target) {
+//        int i = src.indexOf(target);
+//
+//        if (i == 1) return true;
+//        else return false;
+//    }
 
-        if (i == 1) return true;
-        else return false;
+//    연습문제 풀이 더 간단하다
+    public static boolean contains(String src, String target) {
+        return src.indexOf(target) != -1;
     }
 
     public static void main(String[] args) {
