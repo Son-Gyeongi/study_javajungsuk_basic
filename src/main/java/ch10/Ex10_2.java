@@ -2,6 +2,7 @@ package ch10;
 
 import java.util.Calendar;
 
+// 날짜 지정하는 방법
 public class Ex10_2 {
     public static void main(String[] args) {
         // 요일은 1부터 시작하기 때문에, DAY_OF_WEEK[0]은 비워두었다.
