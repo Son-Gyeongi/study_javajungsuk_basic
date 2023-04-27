@@ -14,7 +14,7 @@ public class Practice10_4_answer {
         Calendar date2 = Calendar.getInstance();
 
         date1.set(2000, 0, 1); // 2000년 1월 1일로 날짜를 설정한다.
-        date2.set(2023, 3, 27); // 2016년 1월 29일로 날짜를 설정한다.
+        date2.set(2016, 0, 29); // 2016년 1월 29일로 날짜를 설정한다.
 
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 
