@@ -27,13 +27,13 @@ public class Ex11_3 {
                 }
             }
 
-            if (st.isEmpty()) {
+            if (st.isEmpty()) { // 스택이 비어있다면
                 System.out.println("괄호가 일치합니다.");
             } else {
                 System.out.println("괄호가 일치하지 않습니다.");
             }
-        } catch (EmptyStackException e) {
-            System.out.println("괄호가 일치하지 않습니다.");
+        } catch (EmptyStackException e) { // 닫는 괄호가 더 많으면 예외 발생
+            System.out.println("예외 발생. 괄호가 일치하지 않습니다.");
         } // try
     }
 }
