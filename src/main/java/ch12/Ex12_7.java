@@ -17,6 +17,7 @@ interface Testable {
 }
 
 public class Ex12_7 {
+    @SuppressWarnings("deprecation") // 컴파일러가 보여주는 경고메시지가 나타나지 않게 억제 해준다.
     public static void main(String[] args) {
         Child c = new Child();
         c.parentMethod(); // deprecated된 메서드 사용
