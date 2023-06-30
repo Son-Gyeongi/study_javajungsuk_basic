@@ -13,18 +13,21 @@ public class Ex13_1 {
     }
 }
 
-class ThreadEx1_1 extends Thread { // Thread 클래스를 상속
-
-    public void run() {
+    /**
+     * 쓰레드를 구현하는 방법 2가지
+     * 둘 다 하는 일이 run()을 완성 하는거다.
+     */
+class ThreadEx1_1 extends Thread { // 1. Thread 클래스를 상속해서 쓰레드를 구현
+    public void run() { // 쓰레드가 수행할 작업
         for (int i = 0; i < 5; i++) {
-            System.out.println(getName()); // 조상인 Thread의 getName()을 호출
+            System.out.println(getName()); // 조상인 Thread의 getName()을 호출, 상속받은 메서드
+//            System.out.println(this.getName()); // this.getName() 인데 this가 생략 되었다.
         }
     }
 }
 
-class ThreadEx1_2 implements Runnable { // Runnable 인터페이스를 구현
-
-    public void run() {
+class ThreadEx1_2 implements Runnable { // 2. Runnable 인터페이스를 구현해서 쓰레드를 구현
+    public void run() { // 쓰레드가 수행할 작업
         for (int i = 0; i < 5; i++) {
             // Thread.currentThread() - 현재 실행중인 Thread를 반환한다.
             System.out.println(Thread.currentThread().getName());
