@@ -8,14 +8,14 @@ public class Ex13_11 {
         ThreadEx11_2 th2 = new ThreadEx11_2();
         th1.start();
         th2.start();
-        startTime = System.currentTimeMillis();
+        startTime = System.currentTimeMillis(); // 시작시간
 
         // main메서드 쓰레드가 수행을 마쳤다하더라도
         // 다른 쓰레드가 아직 작업을 마치지 않은 상태라면 프로그램이 종료되지 않는다.
-//        try {
-//            th1.join(); // main쓰레드가 th1의 작업이 끝날 때까지 기다린다.
-//            th2.join(); // main쓰레드가 th2의 작업이 끝날 때까지 기다린다.
-//        } catch (InterruptedException e) {}
+        try {
+            th1.join(); // main쓰레드가 th1의 작업이 끝날 때까지 기다린다.
+            th2.join(); // main쓰레드가 th2의 작업이 끝날 때까지 기다린다.
+        } catch (InterruptedException e) {}
 
         System.out.print("소요시간 : " + (System.currentTimeMillis() - Ex13_11.startTime));
     } // main
