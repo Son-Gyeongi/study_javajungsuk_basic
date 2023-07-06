@@ -1,0 +1,13 @@
+Practice13_4
+다음 중 interrupt()에 의해서 실행대기 상태(RUNNABLE)가 되지 않는 경우는?(모두 고르시오)
+1. sleep()에 의해서 일시정지 상태인 쓰레드
+2. join()에 의해서 일시정지 상태인 쓰레드
+3. wait()에 의해서 일시정지 상태인 쓰레드
+4. suspend()에 의해서 일시정지 상태인 쓰레드
+
+답 4
+suspend() - 쓰레드를 일시정지 시킨다. resume()을 호출하면 다시 실행대기 상태로 만든다.
+
+suspend()를 제외한 나머지 메서드들은 interrupt()가 호출되면 InterruptedException이 발생하여
+일시정지 상태에서 벗어나 실행대기 상태가 된다.
+(try-catch문으로 InterruptedException을 처리해주어야 한다.)
