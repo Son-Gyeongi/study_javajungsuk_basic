@@ -5,7 +5,7 @@ import java.util.OptionalInt;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-/* 스트림의 최종연산 = reduce() */
+/* 스트림의 최종연산 - reduce() */
 public class Ex14_9 {
     public static void main(String[] args) {
         String[] strArr = {
