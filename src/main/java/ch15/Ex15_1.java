@@ -6,6 +6,8 @@ import java.util.Arrays;
 
 /*
 InputStream과 OutputStream 예제1
+- ByteArrayInputStream / ByteArrayOutputStream은 메모리,
+즉 바이트배열에 데이터를 입출력 하는데 사용되는 스트림이다.
  */
 public class Ex15_1 {
     public static void main(String[] args) {
@@ -20,7 +22,7 @@ public class Ex15_1 {
 
         int data = 0;
 
-        while ((data = input.read()) != -1)
+        while ((data = input.read()) != -1) // 더이상 읽어올 데이터가 없을 때 -1을 반환
             output.write(data); // void write(int b)
 
         outSrc = output.toByteArray(); // 스트림의 내용을 byte배열로 반환한다.

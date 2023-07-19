@@ -6,6 +6,8 @@ import java.util.Arrays;
 
 /*
 InputStream과 OutputStream 예제2
+- 바구니(배열 temp)를 이용하면 한 번에 더 많은 물건을 옮길 수 있는 것과 같다고 이해하면 좋다.
+- 배열을 이용한 입출력은 작업의 효율을 증가시키므로 가능하면 입출력 대상에 따라 알맞은 크기의 배열을 사용하는 것이 좋다.
  */
 public class Ex15_2 {
     public static void main(String[] args) {
@@ -19,7 +21,7 @@ public class Ex15_2 {
         input = new ByteArrayInputStream(inSrc);
         output = new ByteArrayOutputStream();
 
-        input.read(temp, 0, temp.length); // 읽어 온 데이터를 배열 temp에 담는다.
+        input.read(temp, 0, temp.length); // 읽어 온 데이터를 배열 temp에 담는다. temp배열에 0번째 인덱스 부터 temp길이만큼 inSrc를 받아온다.
         output.write(temp, 5, 5); // temp[5]부터 5개의 데이터를 write한다.
 
         outSrc = output.toByteArray();
