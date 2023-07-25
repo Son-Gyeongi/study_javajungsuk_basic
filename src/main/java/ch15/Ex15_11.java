@@ -19,8 +19,6 @@ public class Ex15_11 {
             }
 
             br.close();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        } catch (IOException e) {}
     } // main
 }
