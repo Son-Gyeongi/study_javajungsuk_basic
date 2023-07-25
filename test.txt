@@ -1,0 +1,2 @@
+표준 입출력의 대상변경 예제
+Hello by System.out
