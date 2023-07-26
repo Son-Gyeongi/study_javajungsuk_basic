@@ -28,7 +28,7 @@ public class Ex15_15 {
         System.out.println("File.separator = " + File.separator);
         System.out.println("File.separatorChar = " + File.separatorChar);
         System.out.println();
-        System.out.println("user.dir=" + System.getProperty("user.dir"));
+        System.out.println("user.dir=" + System.getProperty("user.dir")); // 현재 프로그램이 실행중인 디렉토리 확인
         System.out.println("sun.boot.class.path="+System.getProperty("sun.boot.class.path"));
     }
 }
