@@ -3,7 +3,7 @@ package ch16;
 import java.net.URL;
 import java.net.URLConnection;
 
-// URLConnection 클래스
+// URLConnection 클래스 예제1
 public class Ex16_3 {
     public static void main(String[] args) {
         String address = "http://www.codechobo.com/main";
