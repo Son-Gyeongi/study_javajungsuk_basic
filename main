@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>코드초보</title>
+
+    
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<meta property="og:title" content="코드초보">
+<meta property="og:url" content="http://www.codechobo.com/">
+<meta property="og:description" content="코드초보">
+
+<title></title>
+<!-- Bootstrap Core Css -->
+<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Custom Css -->
+<link rel="stylesheet" href="/css/layout.css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+
+
+
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">코드초보</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="/post/notice/list">공지사항</a></li>
+                    <li><a href="/post/free/list">자유게시판</a></li>
+                    <li><a href="/course/java/list">강좌</a></li>
+                    <li><a href="#">책소개</a></li>
+                </ul>
+                
+                	<ul class="nav navbar-nav navbar-right">
+                		<li><a href="/signup" class="heder-login">회원가입</a></li>
+                    	<li><a href="/login" class="heder-login">로그인</a></li>
+                    </ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+<form action="/logout" method="post" id="form_logout" name="form_logout">
+    <input type="hidden" name="_csrf" value="225c2760-e9e4-442c-ad8c-0def7de82128" />
+</form>
+<script>
+    function fn_logout() {
+        $("#form_logout").submit();
+    }
+</script>
+
+
+    <div class="jumbotron">
+        <div class="container text-center">
+        <h2>남궁성의 코드초보스터디(java, C언어)</h2>
+        <p class="lead">사이트 준비중입니다.아래 버튼을 클릭해 주세요.</p>
+        <p><a class="btn btn-lg btn-success" href="http://cafe.naver.com/javachobostudy" role="button"><i class="fa fa-coffee" aria-hidden="true"></i> 코드초보 스터디 카페 바로가기</a></p>
+        <p><a class="btn btn-lg btn-success" href="https://www.youtube.com/channel/UC1IsspG2U_SYK8tZoRsyvfg" role="button">[Java의 정석 3판] 동영상강좌 보기</a></p>
+        <p><a class="btn btn-lg btn-success" href="http://codechobo.tistory.com/19" role="button"> [Java의 정석 3판] 소스코드 다운받기</a></p>
+        <p><a class="btn btn-lg btn-success" href="http://codechobo.tistory.com/1" role="button">[Java의 정석 3판] 연습문제&풀이 다운받기</a></p>
+    </div>
+        </div>
+
+    
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">&copy; Company 2015</p>
+    </div>
+</footer>
+
+
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/js/jquery-common.js"></script>
+</body>
+</html>

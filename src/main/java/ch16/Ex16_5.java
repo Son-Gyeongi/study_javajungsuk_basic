@@ -17,7 +17,7 @@ public class Ex16_5 {
         try {
             url = new URL(address);
             in = url.openStream();
-            out = new FileOutputStream("");
+            out = new FileOutputStream("main");
 
             while ((ch = in.read()) != -1) {
                 out.write(ch);
